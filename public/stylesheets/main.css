@@ -4,6 +4,7 @@
 }
 
 .thumbnail{
+    min-height: 175px;
     padding:0px;
 }
 
@@ -20,4 +21,9 @@
 .flex{
     display: flex;
     flex-wrap: wrap;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
 }
