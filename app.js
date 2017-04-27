@@ -56,8 +56,8 @@ app.use(function(req,res,next){
 //app.use("/campinggrounds/:id/comments",commmentRoutes);
 
 //seedDB(); //exporting the function from seed.js
-//mongoose.connect("mongodb://localhost/yelp_camp_v5");
-mongoose.connect("mongodb://divakar239:visage239@ds123351.mlab.com:23351/yelp_camp_239");
+mongoose.connect(process.env.DATABASEURL);
+//mongoose.connect("mongodb://divakar239:visage239@ds123351.mlab.com:23351/yelp_camp_239");
 
 
 //Listening for requests
