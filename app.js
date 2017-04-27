@@ -56,9 +56,9 @@ app.use(function(req,res,next){
 //app.use("/campinggrounds/:id/comments",commmentRoutes);
 
 //seedDB(); //exporting the function from seed.js
-mongoose.connect(process.env.DATABASEURL);
-//mongoose.connect("mongodb://divakar239:visage239@ds123351.mlab.com:23351/yelp_camp_239");
 
+//using environmental variable
+mongoose.connect(process.env.DATABASEURL);
 
 //Listening for requests
 app.listen(process.env.PORT,process.env.IP,function(){
